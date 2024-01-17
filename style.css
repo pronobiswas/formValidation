@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(rgb(0, 0, 40), black, #170000f5);
+    background: radial-gradient(#000000, #000000, #06130df5, #150719, #0d0000, #000000);
     background-repeat: repeat;
     /* background-size: 10% 10%; */
     background-position: center;
@@ -31,19 +31,38 @@ input{
     outline: 2px solid transparent;
     background-color: #02bb0b1c;
 }
+p{
+    width: 300px;
+    /* font-variant: small-caps; */
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: .8;
+    color: #fff;
+
+}
+button{
+    background-color: #02bb0b;
+    color: #fff;
+    padding: 6px 24px;
+    outline: 2px solid transparent;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
 input:focus{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #ffee00;
     outline-offset: 3px;
 }
 .name_section{
     position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 .name_result{
     position: absolute;
-    top: -15px;
-    right: -130px;
-    color: red;
+    top: -6px;
+    left: 105%;
 }
 .email_section{
     position: relative;
@@ -55,9 +74,11 @@ input:focus{
 }
 .password_section{
     position: relative;
+    margin: 20px 0;
 }
 .password_result{
     position: absolute;
-    top: -20;
-    right: -130px;
+    top: -5px;
+    left: 105%;
+    color :#26cdf2;
 }
