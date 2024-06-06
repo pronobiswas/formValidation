@@ -7,6 +7,8 @@ let password_result = document.querySelector(".password_result");
 let btn1 = document.querySelector(".btn1");
 let btn2 = document.querySelector(".btn2");
 let justinput = document.getElementsByTagName("input");
+
+let myresult = document.querySelector(".formdata")
 let name_valid = /^[a-zA-Z]+ [a-zA-Z]+$/;
 let email_regax = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -21,6 +23,8 @@ btn1.addEventListener("click" , function(){
     else{
         name_result.innerHTML = "thank you";
     }
+    myresult.innerHTML = name.input.value
+    console.log("horibol");
 });
 // email match
 btn1.addEventListener("click" , function(){
